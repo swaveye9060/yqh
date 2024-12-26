@@ -16,19 +16,27 @@ body {
 	position: fixed;
 	top: 0;
 	left: 0;
-	background-image: url(../img/bg.png);
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	overflow-x: hidden;
-	height: 100vh;
-	width: 100vw;
+	box-sizing: border-box;
+	width: 100%;
+	height: 100%;
 	z-index: -1;
-	border: 1px solid #600bff;
+	/* border: 6px solid #600bff; */
+	background-color: #970300;
+
 
 	img {
+		position: absolute;
+		left: 0;
 		width: 100%;
-		height: 100%;
+		/* height: 100%; */
+	}
+
+	.img1 {
+		top: 0;
+	}
+
+	.img2 {
+		bottom: 0;
 	}
 }
 
@@ -55,8 +63,9 @@ body {
 	align-items: center;
 	flex-direction: column;
 	width: 50vw;
-	margin-top: 5vw;
+	margin-top: 5vh;
 }
+
 
 .home-titleyw {
 	display: flex;
@@ -64,10 +73,12 @@ body {
 	align-items: center;
 	flex-wrap: wrap;
 	width: 50vw;
-	font-size: 12px;
-	line-height: 24px;
+	font-size: 22px;
+	/* line-height: 24px; */
 	color: #efcb85;
-	margin-top: 1vw;
+	margin-top: 1vh;
+	/* text-transform: uppercase; */
+	white-space: nowrap;
 }
 
 .piaofu {
@@ -93,7 +104,7 @@ body {
 
 .home-yah img {
 	width: 40vw;
-	height: 90vw;
+	height: 96vw;
 }
 
 .piaofu1 {
@@ -141,8 +152,8 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin-top: 5vw;
-	margin-bottom: 5vw;
+	margin-top: 10vh;
+	margin-bottom: 6vh;
 }
 
 .hemo-yilu img {
@@ -152,24 +163,25 @@ body {
 
 .hmeo-zcyq-title {
 	display: flex;
-	width: 50vw;
+	width: 60vw;
 	justify-content: flex-start;
-	font-size: 16px;
-	line-height: 32px;
+	font-size: 22px;
+	/* line-height: 32px; */
 
 	color: #f4cfa3;
-	margin-top: 5vw;
+	margin-top: 6vw;
 }
 
 .hmeo-zcyq-titlenr {
 	display: flex;
 	margin-top: 3vw;
-	width: 50vw;
+	width: 60vw;
 	justify-content: flex-start;
-	font-size: 12px;
-	line-height: 24px;
+	font-size: 18px;
+	line-height: 26px;
 
 	color: #f4cfa3;
+	text-indent: 2em;
 }
 
 .home-lcbanner {
@@ -232,9 +244,13 @@ body {
 .homer-dhtitle {
 	display: flex;
 	font-size: 16px;
-	color: #FFFFFF;
+	color: #f4cfa3;
 	line-height: 32px;
 	font-weight: bold;
+	padding: 0px 28px;
+	border: 1px solid #f4cfa3;
+	margin-bottom: 1vh;
+	margin-top: 6vh;
 }
 
 .submit {
@@ -300,4 +316,44 @@ body {
 	border-radius: 5px;
 
 	margin-top: 3vw;
+}
+
+
+/* 设置元素样式 */
+.gradient-box {
+	/* width: 200px; */
+	/* height: auto; */
+	background: linear-gradient(-45deg, #ffb005, #fdffe4, #efcb85);
+	/* background-size: 200% 200%; */
+	animation: gradientAnimation 4s infinite;
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+	font-size: 22px;
+}
+
+@keyframes gradientAnimation {
+	0% {
+		background-position: 0% 50%;
+	}
+
+	50% {
+		background-position: 100% 50%;
+	}
+
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+.font-size-20 {
+	font-size: 20px;
+}
+
+.font-size-24 {
+	font-size: 24px;
+}
+
+.font-size-28 {
+	font-size: 28px;
 }
