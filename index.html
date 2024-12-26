@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<!-- 页面描述 -->
+	<meta name="description" content="张府乔迁" />
+	<!-- 页面关键词 -->
+	<meta name="keywords" content="张府乔迁" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta content="target-densitydpi=320,width=320,user-scalable=no" name="viewport">
+	<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no"
+		name="viewport" id="viewport" />
+	<meta content="yes" name="apple-mobile-web-app-capable">
+	<meta name="applicable-device" content="mobile">
+
+
+
+	<!-- iOS 图标 end -->
+	<title>张府乔迁</title>
+	<link rel="stylesheet" type="text/css" href="css/animate.css" />
+	<link rel="stylesheet" type="text/css" href="css/css.css" />
+</head>
+
+<body>
+	<div class="bgimg"></div>
+	<audio autoplay="autoplay" loop="loop" preload="auto" src="img/nianhui.mp3">
+		当前浏览器不支持audio
+	</audio>
+	<style type="text/css">
+		audio {
+			display: none;
+		}
+	</style>
+
+
+	<div class="main">
+
+
+		<div class="home">
+			<div class="home-title">
+				<div class="home-titleyw wow bounceInUp" data-wow-iteration="1" data-wow-duration="3s">
+					农历十二月初十
+				</div>
+				<div class="home-titleyw wow bounceInDown" data-wow-iteration="1" data-wow-duration="3s">
+					喜迁新居&nbsp;&nbsp;美满如意
+				</div>
+			</div>
+			<div class="piaofu">
+				<img src="img/piaofu.png" class="wow bounceInLeft" data-wow-iteration="1" data-wow-duration="3s">
+			</div>
+			<div class="wow rollIn home-yah" data-wow-iteration="1" data-wow-duration="3s">
+				<img src="img/yaoqinghan.png">
+			</div>
+
+			<div class="home-title">
+				<div class="wow bounceInUp home-titleyw" data-wow-iteration="1" data-wow-duration="3s">
+					乔迁大吉&nbsp;&nbsp;喜气盈门
+				</div>
+				<div class="wow bounceInDown home-titleyw" data-wow-iteration="1" data-wow-duration="3s">
+					张府
+				</div>
+			</div>
+			<div class="piaofu1">
+				<img src="img/piaofu.png" class="wow bounceInLeft" data-wow-iteration="1" data-wow-duration="3s">
+			</div>
+
+			<div class="hemo-yilu wow bounceInLeft" data-wow-iteration="1" data-wow-duration="3s"
+				style="color: rgb(245, 245, 192); font-size: 14px;">
+				2025年1月9日
+			</div>
+		</div>
+
+		<div class="home">
+			<div class="home-zcyq wow bounceInLeft" data-wow-iteration="1" data-wow-duration="3s">
+				<img src="img/zcyq_03.png">
+			</div>
+			<div class="piaofu">
+				<img src="img/piaofu.png" class="wow bounceInLeft" data-wow-iteration="1" data-wow-duration="3s">
+			</div>
+			<div class="hmeo-zcyq-title wow slideInRight" data-wow-iteration="1" data-wow-duration="3s">
+				尊敬的朋友、亲人们：
+			</div>
+
+			<div class="hmeo-zcyq-titlenr wow bounceInLeft" data-wow-iteration="1" data-wow-duration="2s">
+				您好！时光荏苒，岁月峥嵘，张府新居已落成，在此我们谨向长期以来关心、支持我们的亲朋好友致以最诚挚的感谢和崇高的敬意。
+				在这喜庆的日子里，特邀您参加张府乔迁庆典，真诚期待您的光临！
+			</div>
+			<div class="piaofu1">
+				<img src="img/piaofu.png" class="wow bounceInLeft" data-wow-iteration="1" data-wow-duration="3s">
+			</div>
+
+			<div class="wow bounceInDown home-titleyw" data-wow-iteration="1" data-wow-duration="3s">
+				诚挚邀请&nbsp;&nbsp;&nbsp;&nbsp;诚邀光临
+			</div>
+			<div class="wow bounceInUp home-titleyw" data-wow-iteration="1" data-wow-duration="4s">
+				张府
+			</div>
+		</div>
+
+
+		<div class="home">
+
+			<div class="homer-dhtitle wow bounceInLeft" data-wow-iteration="1" data-wow-duration="3s">
+				导航信息
+			</div>
+
+			<div class="wow bounceInDown home-titleyw" data-wow-iteration="1" data-wow-duration="3s">
+				2025年1月9日&nbsp;&nbsp;&nbsp;&nbsp;农历十二月初十
+			</div>
+			<div class="wow bounceInUp home-titleyw" data-wow-iteration="1" data-wow-duration="4s">
+				大永利酒店11层
+			</div>
+
+			<div class="home-lcbanner wow slideInRight" data-wow-iteration="1" data-wow-duration="2s">
+
+				<!--地图-->
+				<div id="container" style="width: 95%;"></div>
+
+				<!-- 加载地图JSAPI脚本 -->
+				<script src="https://webapi.amap.com/maps?v=1.4.15&key=0c8d2257ec7154a19ef489eb9d3ea465"></script>
+				<script>
+					var map = new AMap.Map('container', {
+						resizeEnable: true, //是否监控地图容器尺寸变化
+						zoom: 11, //初始化地图层级
+						center: [110.94, 22.35] //初始化地图中心点
+					});
+
+					var marker = new AMap.Marker({
+						position: new AMap.LngLat(110.94, 22.35),   // 经纬度对象，也可以是经纬度构成的一维数组[116.39, 39.9]
+						title: '大永利酒店'
+					});
+
+					// 将创建的点标记添加到已有的地图实例：
+					map.add(marker);
+
+					// 传入经纬度，设置地图中心点
+					var position = new AMap.LngLat(110.94, 22.35);  // 标准写法
+					// 简写 var position = [116, 39]; 
+					map.setCenter(position);
+					// 获取地图中心点
+					var currentCenter = map.getCenter();
+					// 设置地图级别，级别为数字。
+					// PC上，参数zoom可设范围：[3,18]；
+					// 移动端：参数zoom可设范围：[3,19]
+					map.setZoom(16);
+					// 获取地图级别
+					var currentZoom = map.getZoom();
+
+
+					function init() {
+						map = new AMap.Map("mapContainer", {
+							zoom: 18,
+							center: ["{$lng}", "{$lat}"]
+						});
+						marker = new AMap.Marker({
+							map: map,
+							position: ["{$lng}", "{$lat}"]
+						})
+						marker.setLabel({
+							offset: new AMap.Pixel(110.94, 22.35),//修改label相对于maker的位置
+							content: "Marker"
+						});
+						marker.on('click', function (e) {
+							marker.markOnAMAP({
+								position: marker.getPosition()
+							})
+						})
+						map.addControl(new AMap.ToolBar());
+						if (AMap.UA.mobile) {
+							document.getElementById('button_group').style.display = 'none';
+						}
+					}
+
+
+				</script>
+				<!--地图-->
+
+			</div>
+
+			<div class="ditua">
+				<div class="ditulist wow bounceInLeft" data-wow-iteration="1" data-wow-duration="3s">
+					<a href="https://uri.amap.com/marker?position=110.94,22.35&name=%E4%BF%A1%E5%AE%9C%E5%B8%82%E5%A4%A7%E6%B0%B8%E5%88%A9%E9%85%92%E5%BA%97"
+						target="_blank">打开高德地图</a>
+				</div>
+				<div class="ditulist wow bounceInRight" data-wow-iteration="1" data-wow-duration="3s">
+					<a href="http://api.map.baidu.com/marker?location=110.943907,22.356967&title=信宜市大永利酒店&content=信宜市大永利酒店&output=html"
+						target="_blank">打开百度地图</a>
+				</div>
+			</div>
+			<div class="piaofu ">
+				<img src="img/piaofu.png" class="wow bounceInLeft" data-wow-iteration="1" data-wow-duration="3s">
+			</div>
+
+			</form>
+			<div class="piaofu1">
+				<img src="img/piaofu.png" class="wow bounceInLeft" data-wow-iteration="1" data-wow-duration="3s">
+			</div>
+			<div class="hemo-yilu wow bounceInRight" data-wow-iteration="1" data-wow-duration="3s">
+				<span style="color: rgb(245, 245, 192); font-size: 14px;">一定要来喔~</span>
+			</div>
+		</div>
+	</div>
+	<script src="js/wow.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		new WOW().init();  
+	</script>
+</body>
+
+</html>
